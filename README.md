@@ -1,0 +1,3 @@
+# Differential_Drive_Ball_Tracker
+<p>This is a simple ball tracking code for a differential drive robot with raspicam. The bot runs on rpi3 so in itself is quite laggy for transmitting images through wifi. Inorder to solve this issue , I have used socketing method, which improces the performance by a lot. Right now to make the bot follow the ball, i am just using a proportional controller, which creates oscillations. To solve this ideally a pd controller with proper derivative and proportional gains should be used.</p>
+<p>The bot runs on ros melodic. The command velocities are given to a topic from laptop since actuall image processing is happening in the laptop(which runs on ros noeitc) and using ros master slave the communication is done</p>
